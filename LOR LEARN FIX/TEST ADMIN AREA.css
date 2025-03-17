@@ -1,0 +1,1369 @@
+<style>
+/* -------------------------------------------------------------------------------- */
+/* GENERAL */
+/* -------------------------------------------------------------------------------- */
+p {
+  line-height: 30px !important;
+}
+a,
+a:link,
+a:visited,
+a:hover,
+a:active,
+.link-text {
+  color: #197780 !important;
+}
+/* Change colour of font above video */
+.widget-header.jam-ac-header {
+  color: black !important;
+}
+/* -------------------------------------------------------------------------------- */
+/* CAROUSEL */
+/* -------------------------------------------------------------------------------- */
+/* change carousel white bg opacity */
+.caption-overlay.partial-overlay.bottom-left {
+  opacity: 0.97 !important;
+}
+
+/* -------------------------------------------------------------------------------- */
+/* CATALOG SEARCH BAR */
+/* -------------------------------------------------------------------------------- */
+.catalog-search-widget .image-cropper img {
+  display: none !important;
+}
+.catalog-search-widget .overlay {
+  display: none !important;
+}
+.catalog-search-widget .center-container {
+  position: relative !important;
+}
+.catalog-search-widget .search-input {
+  height: 38px !important;
+  border: 0 !important;
+  background-color: #f7f7f7 !important;
+  transition: 0.3s all;
+  color: #2d2d2d;
+  padding-left: 15px;
+}
+.catalog-search-widget .search-input:hover {
+  background-color: #fffde4 !important;
+  transition: 0.3s all;
+}
+.catalog-search-widget.large > .search-box-container .search-button {
+  height: 38px !important;
+  width: 60px !important;
+  padding: 5px !important;
+}
+.catalog-search-widget .search-input::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #2d2d2d;
+  font-style: normal;
+  font-weight: 300 !important;
+  opacity: 1; /* Firefox */
+}
+.catalog-search-widget .search-input:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #2d2d2d;
+  font-style: normal;
+  font-weight: 300 !important;
+}
+.catalog-search-widget .search-input::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #2d2d2d;
+  font-style: normal;
+  font-weight: 300 !important;
+}
+.catalog-search-widget .search-box-container .search-button {
+  background-color: #ffcd00;
+  color: rgb(29, 29, 27);
+  border: 1px solid #dbb004;
+  text-align: center;
+  font-weight: 700;
+  font-size: 14px;
+  transition: 0.3s all;
+}
+.catalog-search-widget .search-box-container .search-button:hover {
+  background-color: #dbb004;
+  border: 1px solid #dbb004;
+  transition: 0.3s all;
+  color: rgb(29, 29, 27);
+}
+.catalog-search-widget {
+  margin: 1px !important;
+}
+/* LOR Logo */
+.catalog-search-widget + .text-widget {
+  position: absolute !important;
+  left: 8px;
+}
+.catalog-search-widget + .text-widget .text-widget-content {
+  padding: 15px 0 0 0 !important;
+}
+.rjc-lorLearnLogo {
+  height: 38px !important;
+}
+
+/* -------------------------------------------------------------------------------- */
+/* TOP NAVBARS */
+/* -------------------------------------------------------------------------------- */
+.home-page-settings-container {
+  top: 30vh !important;
+}
+nav {
+  display: none !important;
+}
+/* .row-container with #page-layout-container > div > div > div:first-child > div */
+/* this changes the height of the search bar so that the black bar behind isn't so big */
+#page-layout-container
+  > div
+  > div
+  > div:first-child
+  > div:last-child
+  > div
+  > div
+  > div
+  > div
+  > div:first-child {
+  padding-bottom: 0 !important;
+}
+#page-layout-container > div > div > div:first-child > div:last-child {
+  position: fixed !important;
+  top: 0;
+  height: 70px;
+  padding: 10px 0;
+  width:100%;
+}
+#page-layout-container
+  > div
+  > div
+  > div:first-child
+  > div:last-child
+  > div
+  > div
+  > div
+  > div
+  > div:last-child {
+  position: absolute !important;
+  top: -7px;
+  display: block;
+  width: 100%;
+}
+#page-layout-container > div > div > div:first-child > div:last-child .search-box-container {
+  width: 100% !important;
+}
+/* Moves search bar to the right of navbar */
+#page-layout-container
+  > div
+  > div
+  > div:first-child
+  > div:last-child
+  > div
+  > div
+  > div
+  > div
+  > div:last-child
+  .SBBG3kG_F8PMBEEbsjyr.MtDg_tCR6l9VQsZLmlSi {
+  float: right;
+  width: 70%;
+}
+/* Moves custom navigation menu to the left of navbar */
+#page-layout-container
+  > div
+  > div
+  > div:first-child
+  > div:last-child
+  > div
+  > div
+  > div
+  > div
+  > div:last-child
+  .SBBG3kG_F8PMBEEbsjyr.MtDg_tCR6l9VQsZLmlSi:last-child {
+  float: left;
+  width: auto;
+}
+/* Moves custom navigation menu up slightly relative to the navbar */
+#page-layout-container
+  > div
+  > div
+  > div:first-child
+  > div:last-child
+  > div
+  > div
+  > div
+  > div
+  > div:last-child
+  .rjc-navbar {
+  margin: -5px !important;
+}
+.search-button {
+  min-height: 38px !important;
+}
+/* Move tabs to footer */
+#home_nav_tabs_container {
+  position: absolute !important;
+  border-bottom: 1px #2d2d2d solid !important;
+  width: 100vw !important;
+  background-color: #000000 !important;
+  bottom: 0 !important;
+  box-shadow: none !important;
+}
+/* Changes tab title colours */
+.nav-tab-title {
+  color: rgb(119 119 119);
+}
+/* Dropdown container */
+.rjc-dropdown {
+  display: inline-block;
+  position: relative;
+  outline: none;
+  margin: 0;
+  font-size: 14px;
+  display: flex;
+}
+.rjc-dropdown a {
+  text-decoration: none;
+  color: white !important;
+}
+/* button */
+.rjc-dropbtn {
+  padding: 12px 20px 12px 16px;
+  color: white;
+  background-color: rgb(0, 0, 0);
+  transition: 0.35s ease-out;
+}
+.rjc-arrow {
+  padding: 12px 20px 12px 16px;
+  color: white;
+  background-color: rgb(0, 0, 0);
+  transition: 0.35s ease-out;
+}
+/* dd content */
+.rjc-dropdown .rjc-dropdown-content {
+  max-height: 0;
+  padding: 0;
+  overflow: hidden;
+  list-style-type: none;
+  background: #444;
+  transition: max-height 0.25s ease-out;
+  position: fixed;
+  min-width: 100px;
+  top: 48px;
+  width: max-content;
+}
+.rjc-dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  display: block;
+  text-decoration: none;
+  transition: 0.35s ease-out;
+  font-weight: 400;
+  font-size: 14px;
+}
+.rjc-dropdown-content a:hover {
+  background-color: #000;
+  transition: 0.35s ease-out;
+}
+/* show dd content */
+.rjc-dropdown:hover .rjc-dropdown-content {
+  max-height: 400px;
+  transition: max-height 0.25s ease-in;
+}
+.rjc-dropbtn:hover,
+.rjc-dropdown:hover .rjc-dropbtn {
+  background-color: #000;
+}
+/* mask to close menu by clicking on the button */
+.rjc-dropdown .rjc-db2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  display: none;
+}
+.rjc-dropdown:hover .rjc-db2 {
+  display: inline-block;
+}
+.rjc-dropdown .rjc-db2:hover .rjc-dropdown-content {
+  outline: none;
+  visibility: hidden;
+  opacity: 0;
+}
+.rjc-arrow:after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 47%;
+  right: 8px;
+  width: 0;
+  height: 0;
+  border-top: 4px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 0 solid rgba(255, 255, 255, 0.5);
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  transition: border-bottom 0.1s, border-top 0.1s 0.1s;
+}
+.rjc-dropdown:hover .rjc-arrow:after {
+  border-top: 0 solid rgba(255, 255, 255, 0.5);
+  border-bottom: 4px solid rgba(255, 255, 255, 0.5);
+  transition: border-top 0.1s, border-bottom 0.1s 0.1s;
+}
+.rjc-dropdown .rjc-db2:hover ~ .rjc-arrow:after {
+  border-top: 0 solid rgba(255, 255, 255, 0.5);
+  border-bottom: 4px solid rgba(255, 255, 255, 0.5);
+  transition: border-top 0.1s, border-bottom 0.1s 0.1s;
+}
+.rjc-navbar {
+  display: flex;
+  align-items: center;
+  background-color: rgb(0, 0, 0);
+}
+.rjc-logo {
+  padding: 0;
+}
+.rjc-logo img {
+  height: 35px;
+}
+/* WORKSPACE */
+.jam-widget.search-widget {
+    margin-top:10px !important;
+}
+.workspace-actions.flex {
+    position: absolute;
+    bottom: 44px;
+    margin-left: 240px;
+}
+.workspace-info {
+    max-width:100% !important;
+    margin-top: 190px !important;
+    margin-left: -55px !important;
+}
+.workspace-info::before {
+    opacity: 0 !important;
+}
+.workspace-description{
+    display: none;
+}
+.workspace-content{
+    color:white !important
+}
+.workspace-name {
+    color: white;
+    font-family: F37 Ginger, Century Gothic, Helvetica, sans-serif;
+    max-width: 1000px;
+    font-size: 68px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+#group-tabs-container {
+    border-top: 8px solid red;
+    width: 1173px;
+    margin: 0 auto;
+    padding-bottom: 33px;
+    box-shadow: none !important;
+}
+.editor-container {
+    height:489px !important;
+}
+.jam-container {
+    width:1113px;
+}
+#jam-body {
+    background-color: white !important;
+}
+.items-container.ph2.flex.items-end {
+    margin-top:12px !important;
+}
+#bg-image-action {
+    position: absolute;
+    margin-left: 125px;
+}
+
+/* -------------------------------------------------------------------------------- */
+/* WORKZONE WIDGET EDITS */
+/* -------------------------------------------------------------------------------- */
+.jam-widget {
+  background-color: #ff000000 !important;
+}
+.jam-widget:has(.sapUiXMLView) {
+  box-shadow: none !important;
+}
+.jam-widget .sapFCardHeader {
+  display: none;
+}
+/* added this to remove a bottom-shadow on the LOR Launch page */
+.image-widget-editor {
+  box-shadow: none !important;
+}
+
+.video-div + .widget-item {
+  display: none !important;
+}
+.image-widget {
+  border: none !important;
+}
+/* get rid of white border bleeding around the images on the front page */
+.layout-page-widget-container.image-widget.showing-img {
+  background-color: transparent !important;
+}
+.jam-ac-header.image-text-caption.caption-inline.left {
+  background-color: white;
+}
+/* Widget titles */
+.sapFCard .sapFCardHeader .sapFCardHeaderText .sapFCardTitle {
+  color: black !important;
+}
+.sapFCard {
+  background: #ffffff00;
+}
+/* Image widget hover-overs */
+.image-widget:hover {
+  transition: 0.3s all;
+}
+.image-widget:hover {
+  transform: scale(1.015) !important;
+  transition: 0.3s all;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 0px 1px, rgba(0, 0, 0, 0.15) 0px 2px 10px 0px !important;
+}
+/* image tile caption text */
+.image-text {
+  font-family: Century Gothic, F37 Ginger, Sans Serif;
+}
+/* -------------------------------------------------------------------------------- */
+/* EMBEDDED WIDGETS */
+/* -------------------------------------------------------------------------------- */
+/* SF added an annoying header to web embed widegts */
+.jam-widget .sapFCardHeader:has(.sapFCardHeaderItemBinded){
+  display: none !important;
+}
+.jam-widget {
+  box-shadow: none !important;
+}
+/* -------------------------------------------------------------------------------- */
+/* LOR LEARN NEWS */
+/* -------------------------------------------------------------------------------- */
+.newsList ol {
+  list-style: none;
+  counter-reset: item;
+  display: inline-flex;
+  font-family: F37 Ginger, Century Gothic, sans-serif !important;
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+.newsList li {
+  counter-increment: item;
+  /* margin-right: 25px; */
+  display: inline-flex;
+  color: white;
+  width: 270px;
+  font-family: F37 Ginger, Century Gothic, sans-serif !important;
+}
+.newsList li a {
+  color: white !important;
+  text-decoration: none !important;
+  font-family: F37 Ginger, Century Gothic, sans-serif !important;
+}
+
+.newsList li:before {
+  margin: -2px 15px 0 0;
+  content: counter(item);
+  color: #ffcd00;
+  font-size: 48px;
+}
+.newsList li:nth-child(odd) {
+  margin-right: 20px;
+}
+
+/* -------------------------------------------------------------------------------- */
+/* LOR LAUNCH */
+/* -------------------------------------------------------------------------------- */
+/* For the common questions section - resuse the news code but change colours and orientation */
+.newsList.lorLaunch li a {
+  color: black !important;
+}
+.newsList.lorLaunch ol {
+  flex-direction: column;
+}
+.newsList.lorLaunch li {
+  width:fit-content;
+  align-items: center;
+  margin-top:15px;
+}
+
+/* -------------------------------------------------------------------------------- */
+/* MY CAREER */
+/* -------------------------------------------------------------------------------- */
+/* Shows the header (the face etc.) on the My Career page, "About Me" widget and add a shadow */
+.jam-widget .sapFCardHeader:has(.sapFAvatarImageContain) {
+  display:block;
+  box-shadow: rgba(0, 0, 0, 0.1) 28px 0 25px -15px inset, rgba(0, 0, 0, 0.1) -20px 0 25px -15px inset;
+}
+/* Put a border around the box and add a shadow */
+.layout-page-widget-container.align-bottom-edge:has(.sapFCardSectionInteractive .sapFCardHeaderItemBinded) {
+  border: 2px solid #63998C !important;
+  border-radius: 10px;
+  max-height: 565px;
+  max-width: 374px;
+  box-shadow: rgba(0, 0, 0, 0.1) 25px 0 25px -15px inset, rgba(0, 0, 0, 0.1) -20px 0 25px -15px inset;
+}
+/* Shows the header (the face etc.) on the My Career page, "My Team" widget and adds a shadow */
+.jam-widget .sapFCardHeader:has(.sapFCardHeaderItemBinded) {
+  display:block;
+  box-shadow: rgba(0, 0, 0, 0.1) 25px 0 25px -15px inset, rgba(0, 0, 0, 0.1) -20px 0 25px -15px inset;
+}
+/* Put a shadow on the direct reports box */
+.sapMLIB:has(.sapFAvatarImage){
+  box-shadow: rgba(0, 0, 0, 0.1) 28px 0 25px -20px inset, rgba(0, 0, 0, 0.1) -20px 0 25px -20px inset;
+  border-bottom: 1px dashed #ffcd00 !important;
+}
+/* Change "Name" and "Direct report: colors to yellow CTA colour */
+.sapFCardSubtitle,.sapFCardStatus {
+  color:#ffcd00 !important;
+}
+/* -------------------------------------------------------------------------------- */
+/* BRILLIANT BASICS */
+/* -------------------------------------------------------------------------------- */
+/* Nav bar buttons for top */
+.rjc-bb-nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 30px 0 15px 0 !important;
+}
+.rjc-bb-nav-btn {
+  border: 3px solid #ffcd00;
+  padding: 5px;
+  border-radius: 5px;
+  font-weight: bold;
+  color: black !important;
+  margin: 0 10px 10px 0;
+}
+.rjc-bb-nav a {
+  display: flex;
+}
+.rjc-bb-nav-btn:hover {
+  background-color: #ffcd00;
+  transition: 0.2s all;
+}
+.rjc-bb-nav-btn-fill {
+  background-color: #ffcd00;
+}
+
+/* -------------------------------------------------------------------------------- */
+/* CUSTOM ELEMENTS */
+/* -------------------------------------------------------------------------------- */
+/* Button */
+.rjc-btn {
+  background-color: #ffcd00;
+  color: #2d2d2d;
+  border: 1px solid #ffcd00;
+  text-align: center;
+  font-weight: 700;
+  font-size: 14px;
+  transition: 0.3s all;
+  padding: 10px;
+  border-radius: 5px;
+  margin: -5px 25px 0 -15px;
+  float: left;
+}
+.rjc-btn:hover {
+  background-color: #dbb004;
+  border: 1px solid #dbb004;
+  transition: 0.3s all;
+}
+/* Textbox */
+.rjc-textBox {
+  display: block;
+  margin: 5px -15px 5px -15px !important;
+  color: #4e4e4e !important;
+}
+/* Seperator */
+.rjc-sep {
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #d8d8d8ee;
+  left: 0;
+  margin-top: 14px;
+}
+/* Custom small tiles to showcase the different divisions on the homepage */
+.rjc-small-tile {
+  height: 35px;
+  display: flex;
+  align-items: center;
+  padding: 8px 11px 8px 6px;
+  background-color: white;
+  border-radius: 4px;
+  margin: 2px 7px;
+}
+.rjc-small-tile:hover {
+  transform: scale(1.03);
+  transition: 0.3s all;
+}
+.rjc-small-tile-icon {
+  width: 40px;
+  float: left;
+  margin-right: 10px;
+}
+.rjc-small-tile-text {
+  float: left;
+  color: #2d2d2d;
+  font-weight: 500;
+  font-size: 16px;
+  margin-left: 0px;
+  font-family: F37 Ginger, Century Gothic, sans-serif;
+  margin-top: 2px;
+}
+/* More Learning Paths Tile */
+.rjc-more-learning-paths {
+  height: 155px;
+  background-color: white;
+}
+.rjc-more-learning-paths-bottom {
+  top: 165px;
+  position: absolute;
+  font-weight: 700;
+  font-size: 16px;
+  width: 250px;
+}
+.rjc-more-learning-paths-text {
+  float: left;
+  margin-top: 5px;
+}
+.rjc-learning-path-arrow {
+  float: right;
+}
+.rjc-start-img3 {
+  position: absolute;
+  margin: 0 auto;
+  width: 150px;
+  left: 50%;
+  transform: translate(-50%, 10%);
+}
+.rjc-run {
+  width: 85px;
+  margin: 0 auto;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+.rjc-more-learning-path-hitbox {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+/* -------------------------------------------------------------------------------- */
+/* MY LEARNING PAGE */
+/* -------------------------------------------------------------------------------- */
+/* Colour of button on in-progress-learning widget */
+.sapMLnk:hover:not(.sapMLnkDsbl) {
+  color: #2ba8b4 !important;
+}
+.sapMBtnInner.sapMBtnHoverable.sapMFocusable.sapMBtnText.sapMBtnDefault {
+  background-color: #197780 !important;
+  color: white !important;
+  /* transition: 0.3s all; */
+}
+.sapMBtnInner.sapMBtnHoverable.sapMFocusable.sapMBtnText.sapMBtnDefault:hover {
+  background-color: #2ba8b4 !important;
+  transition: 0.3s all;
+}
+
+/* -------------------------------------------------------------------------------- */
+/* LEARNING AMBASSADOR PAGE */
+/* -------------------------------------------------------------------------------- */
+.rjc-ambassador-table {
+  border-spacing: 1;
+  border-collapse: collapse;
+  background: #dedede;
+  border-radius: 6px;
+  overflow: hidden;
+  max-width: 800px;
+  width: 100%;
+  position: relative;
+  color: black;
+}
+.rjc-ambassador-table th {
+  background-color: #2d2d2d;
+  color: white;
+}
+.rjc-ambassador-table td,
+th {
+  padding-left: 15px !important;
+}
+.rjc-ambassador-table thead tr {
+  height: 60px;
+  background: #ffed86;
+  font-size: 16px;
+}
+.rjc-ambassador-table tbody tr {
+  height: 48px;
+  border-bottom: 1px solid #f7f7f7;
+  transition: 0.3s all;
+}
+.rjc-ambassador-table tr:hover {
+  background-color: #f7f7f7;
+  transition: 0.3s all;
+}
+.rjc-ambassador-table td,
+th {
+  text-align: left;
+}
+
+/* -------------------------------------------------------------------------------- */
+/* HOW TO CREATE LEARNING PAGE */
+/* -------------------------------------------------------------------------------- */
+.rjc-learning-types-table th {
+  font-family: "Century Gothic", sans-serif !important;
+  font-size: 14px !important;
+}
+.rjc-learning-types-table td {
+  font-family: "Century Gothic", sans-serif !important;
+  font-size: 12px !important;
+  padding: 15px 5px !important;
+}
+.rjc-learning-types-table td:first-child {
+  font-weight: 700 !important;
+  font-size: 14px !important;
+}
+
+/* -------------------------------------------------------------------------------- */
+/* VERSION 3 REVAMP SUBPAGES */
+/* -------------------------------------------------------------------------------- */
+/* Pull up the first div of content to overlay it onto the top image */
+#page-layout-container > div > div > div:first-child > div:nth-child(2) {
+  margin: -70px auto 0 auto !important;
+}
+.layout-page-editor.dws-layout-page-editor.optimize-page-layout {
+  background-color: white !important;
+}
+/* The "full width" background now applies to all code within a row. Need to limit the width to keep it consistent */
+#page-layout-container > div > div > div:first-child > div > div {
+  max-width: 1113px;
+}
+/* -------------------------------------------------------------------------------- */
+/* CAREER TOOLKIT PAGES */
+/* -------------------------------------------------------------------------------- */
+/* CTK skill boxes Hover over */
+.rjc-hoverupbox-wrap {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-family: Century Gothic, sans-serif;
+}
+.rjc-hoverupbox {
+  position: relative;
+  background-color: #00a7b5;
+  width: calc((100% - 30px) / 4);
+  margin: 5px 0 5px 10px;
+  height: 140px;
+  color: #fff;
+  overflow: hidden;
+  border-radius: 6px;
+  transition: all 0.25s cubic-bezier(0.31, -0.105, 0.43, 1.4);
+}
+/* Change background colour of select boxes*/
+.rjc-hoverupbox:nth-child(2),
+.rjc-hoverupbox:nth-child(4),
+.rjc-hoverupbox:nth-child(5),
+.rjc-hoverupbox:nth-child(7),
+.rjc-hoverupbox:nth-child(10),
+.rjc-hoverupbox:nth-child(12) {
+  background-color: #76cbd3;
+}
+.rjc-hoverupbox:nth-child(4n + 1) {
+  margin-left: 0px;
+}
+.rjc-hoverupbox span,
+.rjc-hoverupbox div {
+  display: block;
+  height: 100%;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  font-size: 12px;
+}
+/* Box title */
+.rjc-hoverupbox span {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 140%;
+  text-transform: uppercase;
+  left: 0;
+  transition: all 0.25s cubic-bezier(0.31, -0.105, 0.43, 1.4);
+}
+/* Box hidden information that appears on hover */
+.rjc-hoverupbox div {
+  height: calc(100% - 20px);
+  padding: 10px;
+  transition: all 0.25s cubic-bezier(0.31, -0.105, 0.43, 1.4);
+  line-height: 18px;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  top: 100%;
+}
+.rjc-hoverupbox:hover {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 0px 1px, rgba(0, 0, 0, 0.15) 0px 2px 10px 0px !important;
+  transform: scale(1.03);
+}
+.rjc-hoverupbox:hover span {
+  top: -72%;
+  opacity: 0;
+}
+.rjc-hoverupbox:hover div {
+  top: 0%;
+}
+/* Project delivery sub-pages table */
+.rjc-pd-table {
+  width: calc(100% + 0px);
+  max-width: 100%;
+  table-layout: fixed;
+}
+.rjc-pd-table th {
+  text-align: center;
+}
+.rjc-pd-table td,
+th {
+  padding: 7px !important;
+}
+.rjc-pd-table td {
+  border: 1px solid #f7f7f7 !important;
+  font-size: 12px;
+}
+.rjc-pd-table td:nth-child(1) {
+  background-color: #2d2d2d;
+  font-size: 13px;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+}
+.rjc-pd-table tr:nth-child(1) td {
+  background-color: #2d2d2d;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: left;
+  padding: 7px 0 7px 23px !important;
+  color: white;
+}
+
+/* -------------------------------------------------------------------------------- */
+/* FOOTER */
+/* -------------------------------------------------------------------------------- */
+#jam-body {
+  padding-bottom: 0 !important;
+}
+#jam-footer {
+  border-top: 1px solid #272727;
+  background-color: #000000 !important;
+  margin-top: -10px;
+}
+.rjc-footer {
+  height: 515px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+.rjc-footer-container {
+  width: 1190px;
+}
+.rjc-footer-left {
+  color: white;
+  font-size: 30px;
+  width: 465px;
+  float: left;
+  padding: 50px 0;
+}
+.rjc-footer-left img {
+  width: 100px;
+  padding: 5px;
+  background-color: white;
+}
+.rjc-quote {
+  margin-top: 27px;
+}
+.rjc-footer-right {
+  width: 600px;
+  float: right;
+  padding: 137px 0 50px 0;
+  color: white;
+}
+.rjc-footer-right-c {
+  width: 200px;
+  float: left;
+}
+.rjc-footer-right-r2 {
+  margin-top: 140px;
+  clear: both;
+  font-size: 25px;
+  font-weight: 500;
+}
+.rjc-footer-right-r2::after {
+  content: " ";
+  display: block;
+  background: rgb(48, 48, 48);
+  height: 2px;
+  margin-top: 18px;
+}
+.rjc-footer-minihead {
+  font-weight: 600;
+  clear: both;
+}
+.rjc-footer-minisub {
+  color: rgb(119 119 119);
+  margin-top: 10px;
+}
+.rjc-footer-minisub a {
+  text-decoration: none !important;
+  color: rgb(119 119 119) !important;
+}
+.rjc-footer-feedback {
+  padding: 10px;
+  border: 2px solid white;
+  border-radius: 5px;
+  margin-top: 16px;
+  width: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white !important;
+}
+.rjc-footer-feedback img {
+  width: 35px;
+  margin-right: 14px;
+}
+
+/* -------------------------------------------------------------------------------- */
+/* GUILDS PAGE */
+/* -------------------------------------------------------------------------------- */
+.rjc-guild-img {
+  background-image: url(https://images.unsplash.com/photo-1579567761406-4684ee0c75b6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80);
+  height: 130px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-radius: 4px 4px 0 0;
+  background-size: cover;
+  background-position: center;
+}
+.rjc-guild-powerplatform-banner {
+  background-image: url(https://i.ibb.co/cbw3Fvd/Group-19-1.png);
+  background-position: top;
+  background-size: inherit;
+}
+.rjc-guild-worksmart-banner {
+  background-image: url(https://i.ibb.co/KXNR51c/marvin-meyer-SYTO3xs06f-U-unsplash.jpg);
+  background-position: top;
+  background-size: inherit;
+}
+.rjc-guild-sustainability-banner {
+  background-image: url(https://i.ibb.co/hsYN74J/sustainability-guild-img.jpg);
+  background-size: cover;
+}
+.rjc-guild-commercial-banner {
+  background-image: url(https://ubazyytfsaddefals8d5u8.core12.workzone.ondemand.com/embedded_images/show/lEfVbKkz5yDmqsg5Tjxsjm/thumbnail?max_x=1176&max_y=0);
+  background-size: cover;
+}
+.rjc-di-img {
+  background-image: url(https://images.unsplash.com/photo-1569437061238-3cf61084f487?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80) !important;
+}
+.rjc-shadow-img {
+  background-image: url(https://images.unsplash.com/photo-1517586979036-b7d1e86b3345?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=988&q=80);
+}
+.rjc-mentoring-accelerate-img {
+  background-image: url(https://i.ibb.co/tKdWjnF/acc.jpg);
+}
+.rjc-mentoring-circle-img {
+  background-image: url(https://i.ibb.co/74DjVHb/mc5.jpg);
+}
+.rjc-mentoring-collaborate-img {
+  background-image: url(https://i.ibb.co/gmxvhth/sam-moghadam-khamseh-p-DOVqf-PZ4z8-unsplash.jpg);
+}
+.rjc-mentoring-collaborate2-img {
+  background-image: url(https://i.ibb.co/CPyN2KR/collab-img.jpg);
+}
+.rjc-guild-title {
+  margin-top: 130px;
+  font-weight: 700;
+  font-size: 17px;
+  padding-bottom: 14px;
+}
+.rjc-guild-descrip {
+  min-height: 107px;
+  border-bottom: 1px #d7d7d7 solid;
+  margin-bottom: 6px;
+}
+.rjc-guild-btn {
+  float: right;
+  margin: 8px 0 0px 0;
+}
+.rjc-guild-title-img {
+  width: 50px;
+  padding-right: 14px;
+}
+
+/* -------------------------------------------------------------------------------- */
+/* MS TEAMS APP EDITS */
+/* -------------------------------------------------------------------------------- */
+@media (min-width: 767px) and (max-width: 1235px) {
+  .caption-overlay.partial-overlay.bottom-left {
+    margin-bottom: 20px !important;
+  }
+  .caption-overlay.partial-overlay.bottom-left .image-caption {
+    font-size: 25px !important;
+  }
+  .caption-overlay.partial-overlay.bottom-left .image-description.has-title {
+    font-size: 16px !important;
+  }
+  .rjc-connect {
+    font-size: 27px;
+  }
+  .jam-ac-header.image-text-caption.caption-inline.left {
+    max-height: 49px;
+    display: flex;
+    align-items: center;
+    border-radius: 0 0 4px 4px;
+  }
+  .rjc-footer {
+    height: 433px;
+  }
+  .rjc-footer-container {
+    width: 950px;
+  }
+  .rjc-footer-left {
+    width: 311px;
+  }
+  .rjc-footer-right {
+    width: 500px;
+  }
+  .rjc-footer-right-c {
+    width: 150px;
+  }
+  .rjc-footer-right-r2 {
+    margin-top: 100px;
+    font-size: 16px;
+  }
+  .text-widget-content h1 {
+    margin-top: 0 !important;
+  }
+  .space30 {
+    clear: both;
+    height: 30px;
+    display: block;
+  }
+
+  /* Learning path tile */
+  .rjc-more-learning-path-hitbox {
+    height: 174px !important;
+  }
+  .rjc-start-img3 {
+    height: 80px;
+  }
+  .rjc-run {
+    height: 115px;
+  }
+  .rjc-more-learning-paths-bottom {
+    top: 136px;
+    width: 184px;
+  }
+  .rjc-more-learning-paths-text {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .rjc-learning-path-arrow {
+    width: 28px;
+  }
+}
+/* -------------------------------------------------------------------------------- */
+/* MOBILE APP EDITS */
+/* -------------------------------------------------------------------------------- */
+@media screen and (max-width: 480px) {
+  /* Another silly edit by SAP (Apr 2024) where they ruined the mobile experience by adding a flex, without setting a column. This fixes. */
+  #page-layout-container > div > div > div:first-child > div > div > div{
+    flex-direction: column !important;
+  }
+  /* resize thmbnail on sub-pages */
+  .mobile-thumb {
+    max-width: 100% !important;
+    margin: 30px 0 20px 0 !important;
+  }
+  /* shuffle whole screen up */
+  body#home_page_show {
+    margin-top: -60px;
+  }
+  .company-overview-content {
+    top: 10px;
+  }
+  /* make bg black in case any of it shows */
+  .page-layout-container-top.has-homepage-setting {
+    background-color: black;
+  }
+  .rjc-title-v2 {
+    line-height: 65px;
+  }
+  /* Need to move ll-quiz iframe into proper place */
+  .ui-integration-container {
+    margin-left: -15px;
+    width: 100vw;
+  }
+  /* remove empty boxes on mobile that cause spaces */
+  .mob-kill {
+    display: none;
+  }
+  /* remove spaces caused by elements removed in mobile mode (blank spaces by titles)*/
+  div:has(> .layout-page-widget-container.text-widget.align-bottom-edge):has(.mob-kill) {
+    display: none;
+  }
+  /* the ALL PATHS widget - show border radius*/
+  .rjc-more-learning-paths {
+    margin-top: 25px;
+  }
+  .rjc-more-learning-paths-bottom {
+    left: 5%;
+  }
+  /* reduce gap to tile above */
+  .text-widget-content.wiki_content:has(> .rjc-more-learning-paths) {
+    margin-top:3px !important
+  }
+  /* header */
+  .rjc-dropdown {
+    display: none;
+  }
+  #page-layout-container > div > div > div:first-child > div:last-child {
+    height: 41px;
+  }
+  #page-layout-container
+  > div
+  > div
+  > div:first-child
+  > div:last-child
+  > div
+  > div
+  > div
+  > div
+  > div:last-child
+  .rjc-navbar {
+    margin: -0 !important;
+}
+  .catalog-search-widget.small > .search-box-container .search-input {
+    margin: 7px 8px 8px 0;
+  }
+  .layout-page-editor
+    .layout-page-widget-container.text-widget
+    .jam-widget.text-widget
+    .widget-content
+    div.text-widget-content {
+    margin: 9px 7px 7px 3px;
+    padding: 0;
+  }
+  #page-layout-container
+  > div
+  > div
+  > div:first-child
+  > div:last-child
+  > div
+  > div
+  > div
+  > div
+  > div:last-child
+  .SBBG3kG_F8PMBEEbsjyr.MtDg_tCR6l9VQsZLmlSi {
+    float: right;
+    margin-right: 15px;
+    width: 70%;
+  }
+  /* header text on main page */
+  .rjc-title-v2 {
+    font-size: 65px !important;
+    padding: 30px 0 15px 0 !important;
+  }
+
+  .catalog-search-widget.small > .search-box-container .search-button {
+    margin: 7px 3px 7px -4px;
+  }
+  .catalog-search-widget .search-box-container .search-button {
+    height: 39px;
+  }
+  .newsListMob {
+    display: none;
+  }
+  /* carousel */
+  .page-layout-container-top .company-overview-content,
+  .group-header-view .company-overview-content {
+    top: 30px;
+  }
+  body.robus-ui .jam-carousel.hero-carousel,
+  body.robus-ui .jam-carousel.exobj-carousel {
+    height: 166px;
+  }
+  .jam-carousel.hero-carousel.viewport {
+    height: 166px;
+  }
+  .left-right-buttons-container,
+  .pager-container {
+    display: none !important;
+  }
+  .rjc-window-bg {
+    top: 86px;
+  }
+  /* subpages */
+  /* .layout-page-editor
+  .layout-page-widget-container.text-widget
+  .jam-widget.text-widget
+  .widget-content
+  div.text-widget-content {
+    margin: 7px 7px 7px 0;
+  } */
+  .layout-page-editor
+    .layout-page-widget-container.text-widget
+    .jam-widget.text-widget
+    .widget-content
+    div.text-widget-content {
+    margin: 7px 0 7px 0;
+  }
+  .rjc-textBox.rjc-revamp img {
+    padding-right:55px;
+  }
+  /* remove left margin of div next to header */
+  .rjc-subpage-revamp-title + div {
+    margin-left:0 !important;
+  }
+  .rjc-subpage-revamp-title {
+    margin-left:0 !important;
+  }
+  /* titles */
+  .rjc-headers {
+    margin: 5px 0 -5px -0 !important;
+  }
+  .rjc-footer {
+    width: 95vw;
+  }
+  .rjc-footer-right-c {
+    width: 100px;
+  }
+  /* divisions tag type tiles */
+  .divisions-mob {
+    margin-left:0 !important;
+  }
+  /* all learning button */
+  .rjc-all-learn {
+    margin: 0;
+  }
+  /* animation images */
+  .rjc-start-img2 {
+    top: 89px;
+    width: 114px;
+    right: 15px;
+  }
+  .rjc-start-img {
+    top: 72px;
+    width: 126px;
+    right: 7px;
+  }
+  .rjc-cc-left {
+    padding-left: 14px;
+  }
+  .rjc-cc-right {
+    width: calc(45% -14px) !important;
+  }
+  .rjc-cc {
+    max-height: 233px;
+  }
+  #page-layout-container
+    > div
+    > div
+    > div:first-child
+    > div:nth-child(3)
+    > div
+    > div
+    > div:nth-child(even)
+    > div
+    > div:nth-child(3) {
+    max-height: 333px;
+  }
+  /* sub buttons e.g. social learning */
+  .rjc-connect {
+    display: none;
+  }
+  /* footer */
+  .rjc-footer-container {
+    width: 100%;
+  }
+  .rjc-footer-left {
+    width: 47%;
+    padding: 30px 7px;
+  }
+  .rjc-footer-right {
+    width: 47%;
+    float: right;
+    padding: 104px 0 50px 0;
+    color: white;
+  }
+  .rjc-quote {
+    font-size: 23px;
+    margin-top: 25px;
+  }
+  /* Guild page */
+  .rjc-textBox {
+    padding: 0 20px;
+  }
+  .rjc-guild {
+    padding: 14px;
+  }
+  /* Get started page */
+  .rjc-cc-btn {
+    margin: 8px 0 15px 20px;
+  }
+  /* social learning page */
+  .rjc-mentoring {
+    display: none;
+  }
+  .caption-overlay.partial-overlay.bottom-left.stretch-width {
+    margin-bottom: 129px !important;
+  }
+  .caption-overlay.partial-overlay.bottom-left.stretch-width > span > span {
+    font-size: 20px;
+  }
+}
+</style>
+
+<div class="rjc-footer">
+  <div class="rjc-footer-container">
+    <div class="rjc-footer-left">
+      <div class="rjc-footer-left-img">
+        <img src="https://www.laingorourke.com/media/i2entaej/logo.svg?width=185&amp;height=85&amp;rnd=133370939241030000">
+      </div>
+      <div class="rjc-quote">CHANGE THE WAY YOU LOOK AT THINGS AND THE THINGS YOU LOOK AT CHANGE</div>
+    </div>
+    <div class="rjc-footer-right">
+      <div class="rjc-footer-right-r1">
+        <div class="rjc-footer-right-c">
+          <div class="rjc-footer-minihead">CONTACT</div>
+          <div class="rjc-footer-minisub">
+            <a href="mailto:training.uk@laingorourke.com?Subject=LOR%20Learn%20Contact" target="_top">Learning &amp; Development</a>
+          </div>
+        </div>
+        
+      </div>
+      <div class="rjc-footer-right-r2">We'd love to hear from you</div>
+      <a target="_blank" href="https://forms.office.com/Pages/ResponsePage.aspx?id=GKO6lRi4dkaKD1qVpkbDwRZ3P8cXE3hOiHWlDqSw34JUMDgyUUdTN0haQUwwUUNCRUZOWEtDN1RUMy4u">
+        <div class="rjc-footer-feedback">
+          <img src="https://github.com/solensa/imghost/blob/main/feedback-icon.png?raw=true">
+          FEEDBACK
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+
+
