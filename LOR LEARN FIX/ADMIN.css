@@ -1,0 +1,11 @@
+// -------------- #shell-header-hdr-begin, #shell-header-hdr-search-container { display:none
+!important;} #shell-header-hdr-end { position:fixed !important; top:8px !important; // //
+right:calc(~'50vw - 620px') !important; right:15px; } .sapUshellShellHeader { background-color:
+#f7f7f7; width: 1px; padding: 0 !important; height: 1px; } #header-shellArea{ z-index: 99; width:
+0px; height: 0px;} #myInboxBtn { display: none; } #notificationBtn { display: none; }
+#jamProfileIcon { background-color: #4d4d4d !important; // width:32px !important; // height:32px
+!important; // line-height: 32px !important; // position: absolute !important; // top: -45px
+!important; } #meAreaHeaderButton { top: 60px !important; position: fixed !important;
+background-color: transparent !important; } body {font-family: Century
+Gothic,CenturyGothic,AppleGothic,sans-serif !important;} #rjc-navbar {z-index:999 !important} @media
+screen and (max-width: 480px) { #shell-header-hdr-end { display: none !important; } }
