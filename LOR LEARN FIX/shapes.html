@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Floating Shapes</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        overflow: hidden;
+        background: #f8fdfb;
+      }
+
+      .floating-container {
+        position: absolute;
+        inset: 0;
+        overflow: hidden;
+        pointer-events: none;
+      }
+
+      .shape {
+        position: absolute;
+        bottom: -50px;
+        opacity: 0.15;
+        animation-name: floatUp, spin;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+      }
+
+      .circle {
+        border-radius: 50%;
+      }
+
+      .square {
+        /* no extra styles needed */
+      }
+
+      .triangle {
+        width: 0;
+        height: 0;
+        border-left: 12px solid transparent;
+        border-right: 12px solid transparent;
+        border-bottom: 20px solid;
+        background: transparent !important;
+      }
+
+      @keyframes floatUp {
+        0% {
+          transform: translateY(0);
+        }
+        100% {
+          transform: translateY(-120vh);
+        }
+      }
+
+      @keyframes spin {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="floating-container">
+      <!-- Generate 30+ varied shapes below -->
+      <!-- Each with different speeds, sizes, rotations, delays -->
+
+      <!-- Example (copy and customize more for full effect) -->
+
+      <!-- Circles -->
+      <div
+        class="shape circle"
+        style="
+          width: 20px;
+          height: 20px;
+          background: #50a684;
+          left: 5%;
+          animation-duration: 40s, 30s;
+          animation-delay: 0s, 2s;
+        "
+      ></div>
+      <div
+        class="shape circle"
+        style="
+          width: 15px;
+          height: 15px;
+          background: #a3d3bf;
+          left: 10%;
+          animation-duration: 60s, 45s;
+          animation-delay: 10s, 3s;
+        "
+      ></div>
+      <div
+        class="shape circle"
+        style="
+          width: 30px;
+          height: 30px;
+          background: #d1e9df;
+          left: 20%;
+          animation-duration: 50s, 70s;
+          animation-delay: 5s, 1s;
+        "
+      ></div>
+
+      <!-- Squares -->
+      <div
+        class="shape square"
+        style="
+          width: 25px;
+          height: 25px;
+          background: #a3d3bf;
+          left: 28%;
+          animation-duration: 58s, 40s;
+          animation-delay: 3s, 0s;
+        "
+      ></div>
+      <div
+        class="shape square"
+        style="
+          width: 18px;
+          height: 18px;
+          background: #d1e9df;
+          left: 35%;
+          animation-duration: 45s, 35s;
+          animation-delay: 7s, 4s;
+        "
+      ></div>
+      <div
+        class="shape square"
+        style="
+          width: 20px;
+          height: 20px;
+          background: #50a684;
+          left: 42%;
+          animation-duration: 55s, 50s;
+          animation-delay: 1s, 2s;
+        "
+      ></div>
+
+      <!-- Triangles -->
+      <div
+        class="shape triangle"
+        style="
+          border-bottom-color: #50a684;
+          left: 50%;
+          animation-duration: 63s, 30s;
+          animation-delay: 0s, 1s;
+        "
+      ></div>
+      <div
+        class="shape triangle"
+        style="
+          border-bottom-color: #a3d3bf;
+          left: 58%;
+          animation-duration: 70s, 80s;
+          animation-delay: 12s, 6s;
+        "
+      ></div>
+      <div
+        class="shape triangle"
+        style="
+          border-bottom-color: #d1e9df;
+          left: 66%;
+          animation-duration: 48s, 60s;
+          animation-delay: 8s, 3s;
+        "
+      ></div>
+
+      <!-- More shapes -->
+      <div
+        class="shape circle"
+        style="
+          width: 22px;
+          height: 22px;
+          background: #50a684;
+          left: 75%;
+          animation-duration: 57s, 33s;
+          animation-delay: 6s, 2s;
+        "
+      ></div>
+      <div
+        class="shape square"
+        style="
+          width: 16px;
+          height: 16px;
+          background: #a3d3bf;
+          left: 83%;
+          animation-duration: 61s, 40s;
+          animation-delay: 4s, 1s;
+        "
+      ></div>
+      <div
+        class="shape triangle"
+        style="
+          border-bottom-color: #d1e9df;
+          left: 91%;
+          animation-duration: 66s, 36s;
+          animation-delay: 2s, 3s;
+        "
+      ></div>
+
+      <!-- Repeat as desired to scale up to 50–100+ for richer effect -->
+    </div>
+  </body>
+</html>

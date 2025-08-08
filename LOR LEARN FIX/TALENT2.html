@@ -13,10 +13,95 @@
   .link-text {
     color: #197780 !important;
   }
+  /* -------------------------------------------------------------------------------- */
+  /* MY PERFORMANCE */
+  /* -------------------------------------------------------------------------------- */
   /* Change colour of font above video */
   .widget-header.jam-ac-header {
     color: black !important;
   }
+  /* My Perfomance */
+  [aria-label="My Performance"] > DIV:nth-child(1) > DIV:nth-child(1) > DIV:nth-child(1) {
+    background-position: center !important;
+    background-color: black;
+  }
+  [aria-label="My Performance"] > DIV:nth-child(1) > DIV:nth-child(1) > DIV:nth-child(1)::after {
+    background-image: url(https://raw.githubusercontent.com/solensa/imghost/0936edea39e3abf32954403ef8cb86e8f988ef88/squiggle.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    content: "";
+    display: block;
+    width: 100vw;
+    height: calc(100vw / 11.5357);
+    margin-bottom: 0px;
+  }
+  [aria-label="My Performance"] [aria-label="Section 2"] {
+    border-bottom: 1px #343434 solid;
+  }
+  [aria-label="My Performance"] [aria-label="Section 3"] {
+    border-bottom: 1px #343434 solid;
+  }
+  /* -------------------------------------------------------------------------------- */
+  /* KOP */
+  /* -------------------------------------------------------------------------------- */
+  [aria-label="KOP"] [aria-label="Section 2"] {
+    border-bottom: 1px #343434 solid;
+  }
+  [aria-label="KOP"] [aria-label="Section 3"]::after {
+    background-image: url(https://raw.githubusercontent.com/solensa/imghost/0936edea39e3abf32954403ef8cb86e8f988ef88/squiggle.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    content: "";
+    display: block;
+    width: 100vw;
+    height: calc(100vw / 11.5357);
+    margin-bottom: 0px;
+  }
+  [aria-label="KOP"] [aria-label="Section 2"]::before {
+    background-image: url(https://raw.githubusercontent.com/solensa/imghost/0936edea39e3abf32954403ef8cb86e8f988ef88/squiggle.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    left: 0;
+    top: 220px;
+    content: "";
+    display: block;
+    width: 100vw;
+    height: calc(100vw / 11.5357);
+    margin-bottom: 0px;
+    z-index: 1;
+  }
+  [aria-label="KOP"] [aria-label="Section 4"] {
+    border-bottom: 1px #343434 solid;
+  }
+
+  /* body.robus-ui.jam-no-sftemplate #jam-layout.layout-without-header {
+    padding-top: 0 !important;
+  } */
+  /* [aria-label="My Performance"] [aria-label="Section 3"] ::after {
+    content: "";
+    position: absolute;
+    left: -30vw;
+    bottom: 0;
+    width: 150vw;
+    height: 0;
+    border-bottom: 1px solid rgb(74, 74, 74) !important;
+  } */
+
+  [aria-label="Cambridge Abstracts"] iframe {
+    margin-top: -47px !important;
+    z-index: 999;
+  }
+
   /* -------------------------------------------------------------------------------- */
   /* CAROUSEL */
   /* -------------------------------------------------------------------------------- */
@@ -28,7 +113,7 @@
   /* -------------------------------------------------------------------------------- */
   /* CATALOG SEARCH BAR */
   /* -------------------------------------------------------------------------------- */
-  .catalog-search-widget .image-cropper img {
+  .catalog-search-widget .image-widget-container {
     display: none !important;
   }
   .catalog-search-widget .overlay {
@@ -89,7 +174,7 @@
     color: rgb(29, 29, 27);
   }
   .catalog-search-widget {
-    margin: 1px !important;
+    margin: -10px 1px 1px 1px !important;
   }
   /* LOR Logo */
   .catalog-search-widget + .text-widget {
@@ -101,6 +186,15 @@
   }
   .rjc-lorLearnLogo {
     height: 38px !important;
+  }
+
+  /* -------------------------------------------------------------------------------- */
+  /* DESIGN MGT*/
+  /* -------------------------------------------------------------------------------- */
+  /* Design Management - Homepage */
+  [aria-label="Design Management - Homepage"] #search-widget-content {
+    max-width: 600px !important;
+    top: -3px;
   }
 
   /* -------------------------------------------------------------------------------- */
@@ -135,7 +229,7 @@
     > div:nth-child(1)
     > div:last-child {
     position: absolute !important;
-    top: -18px;
+    top: -7px;
     display: block;
     width: 100%;
   }
@@ -151,8 +245,12 @@
     > div:nth-child(1)
     > div:nth-child(1)
     > div:nth-child(1)
+    > div:nth-child(1)
+    > div:nth-child(1)
+    > div:nth-child(2)
     > div:nth-child(1) {
     flex-direction: row !important;
+    align-items: center;
   }
   /* V4 make searchbar correct width, Parent: */
   .catalog-search-widget.large > .center-container {
@@ -670,15 +768,15 @@
   /* -------------------------------------------------------------------------------- */
   /* Pull up the first div of content to overlay it onto the top image */
   /* #page-layout-container > div > div > div:first-child > div:nth-child(2) {
-    margin: -185px auto 0 auto !important;
-  }
-  .layout-page-editor.dws-layout-page-editor.optimize-page-layout {
-    background-color: white !important;
-  } */
+      margin: -185px auto 0 auto !important;
+    }
+    .layout-page-editor.dws-layout-page-editor.optimize-page-layout {
+      background-color: white !important;
+    } */
   /* The "full width" background now applies to all code within a row. Need to limit the width to keep it consistent */
   /* #page-layout-container > div > div > div:first-child > div > div {
-    max-width: 1190px;
-  } */
+      max-width: 1190px;
+    } */
   /* -------------------------------------------------------------------------------- */
   /* CAREER TOOLKIT PAGES */
   /* -------------------------------------------------------------------------------- */
@@ -793,6 +891,7 @@
   /* FOOTER */
   /* -------------------------------------------------------------------------------- */
   #jam-body {
+    padding-top: 0 !important;
     padding-bottom: 0 !important;
   }
   #jam-footer {
@@ -1179,12 +1278,12 @@
     }
     /* subpages */
     /* .layout-page-editor
-  .layout-page-widget-container.text-widget
-  .jam-widget.text-widget
-  .widget-content
-  div.text-widget-content {
-    margin: 7px 7px 7px 0;
-  } */
+    .layout-page-widget-container.text-widget
+    .jam-widget.text-widget
+    .widget-content
+    div.text-widget-content {
+      margin: 7px 7px 7px 0;
+    } */
     .layout-page-editor
       .layout-page-widget-container.text-widget
       .jam-widget.text-widget
@@ -1327,7 +1426,7 @@
       <div class="rjc-footer-right-r2">We'd love to hear from you</div>
       <a
         target="_blank"
-        href="https://forms.office.com/Pages/ResponsePage.aspx?id=GKO6lRi4dkaKD1qVpkbDwRZ3P8cXE3hOiHWlDqSw34JUMDgyUUdTN0haQUwwUUNCRUZOWEtDN1RUMy4u"
+        href="https://forms.office.com/Pages/DesignPageV2.aspx?origin=NeoPortalPage&subpage=design&id=GKO6lRi4dkaKD1qVpkbDwfF1T_HwOo9JsoZiXxpyht5URTUzME1TU1lNUDNFODVGVkFaSVIxUUo4Qy4u"
       >
         <div class="rjc-footer-feedback">
           <img src="https://github.com/solensa/imghost/blob/main/feedback-icon.png?raw=true" />
